@@ -1,13 +1,127 @@
-<!-- HTML tag is the root of the html document and used to specify document is html-->
-<html>
-    <!--Head tag is used to contain all the head element in the html file. Contains metadata about markup-->
-    <head>
-        <title>Example Project</title>
-    </head>
-    <!-- Body tag defines the body of the document -->
-    <body>
-        <h1>My Example Project</h1>
-        <p>This is an example project. Words are things. But are all things words?</p>
-        <a href='sidefile.html'>Link</a>
-    </body>
+<!DOCTYPE html>
+<html lang='en'>
+  <header lang='en'>
+    <title>Example Project</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font links -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!-- Personal style sheet -->
+    <link rel='stylesheet prefetch' type = 'text/css' href='/style.css'/>
+  </header>
+  <body>
+    <!-- Borrowed from Bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="sidefile.html">Your File <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Empty Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Empty Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <br />
+    <h1 class = 'main_title' id = 'home_page_main_title'>Welcome to CS 225!</h1><br />
+    <h2 class = 'sub_main_title'>This is Data Structures</h2>
+    <br/>
+    <h4 style='text-align:center;'><em>Hi</em></h4>
+    <br />
+    <div class = 'body_container'><h2 class = 'intro_header'>My Thoughts</h2>
+        <p class = 'intro_body'>
+          To be taking this class, you have to have taken at least CS 125 or ECE 220. Those were programming classes. This is a <b>
+          computer science</b> class. That should excite you! CS 225 has all the potential to ignite in you a passion to learn more and more about computer science. It's corny
+          but this class had me actually excited to learn for the first time in college. I love data structures, programming and, thanks to Part 3 of MPs, <i> creation</i>. This
+          website is the direct offspring of how cool I found the process of making something from words on a screen.
+          <br />
+          But you've undoubtedly heard that this class is hard and time-consuming. It is. But I fervently believe that everyone has the potential to get an A and no one should get
+          below a C. So how do you it?
+        </p>
+        <br />
+        <h3>Do the Work</h3>
+          <p class = 'tip_body'>
+            I wish this wasn't my first and arguably most important point but it is. There are a lot of people who will start and attempt to finish the assignment on Monday, banking
+            on the 24 hour grace period. And they might, thanks to a variety of friends and online sources. But a lot will not and lose 4.5% of their grade in the class.
+            <br />
+            Treat MPs as "easy" points! You have an instant response on whether you're getting a 100 and you have nightly autograders that catch anything else. And by doing them,
+            as much by yourself as possible, you set yourself up to do well on the test. And spoiler alert, the tests are usually just simplier versions of POTDs and MPs. MPs are, as Wade put it,
+            the bread and butter of the class. What you put into them, you'll get out of them. I personally liked MP5 and included some of my artwork somewhere (I wrote this section before the
+            website was completely done).
+            <br />
+            Quick note about cheating: Don't. You're going to get to caught and it will be very, very sad (for you). Course staff can google too and they WILL know if you get
+            your code from Github or wherever and your code will be compared to everyone else's. That being said, you ARE allowed to google how to solve a problem you don't know and apply
+            it to your code, just don't copypasta.
+            <br />
+          </p>
+          <br />
+          <h3>Office Hours</h3>
+          <p class = 'tip_body'>
+            You have available to you some of the best office hours on campus. The staff is absolutely fantastic, helpful and friendly. Make it a goal to know them by name!
+            Like all people, they're more relaxed with someone they know and that means they can help you with your problem. And I'm not just saying that so they'll hire
+            me ;). But in all seriousness, the office hours are almost excessively useful and helpful.
+            <br />
+            They do suffer from a major clogging problem and no one has been able to come up with a great solution.
+            If you go on the Saturday, Sunday or Monday before an MP is due (especially the later ones), be sure that you'll have a 4+ hour wait ahead of you. I once spent 8 hours in Siebel
+            waiting on a TA and never got helped. But there's a really easy work around to this system... DO IT EARLY! Thursday and Friday evenings are very available times to get there and the
+            TAs are usually so bored, they'll help you a lot more then they normally can afford to.
+            <br />
+            If you're reading this and thinking "Thomas. Fridays are my night off. I want, no, I NEED to go stand in line in the presumably freezing weather (it's Illinois) to get
+            into my favorite bar," that's totally fine. I lived that life once upon a time. And, as someone who was there at least every other Friday, I want to say thank you for helping to keep the
+            queue short.
+            </thead>
+          </p><br />
+          <h3>Plan for the Test</h3>
+          <p class = 'tip_body'>
+            There are 1000 points in CS 225. 610 of those points are from testing. Lets rephrase that because I'm a little slow. The max percent in the class is 100%. <b>61%</b>
+            of your grade is testing.
+            <br /> "But Thomas, that's ridiculous." <br />Yup.
+            <br />"But Thomas, I spent 20+ hours on my MP. That's a better reflection of how good I am." <br />Yup.
+            <br />"But Thomas, [insert complaint here]."<br />
+            I'm sorry my fellow Illini, this isn't going to change. Unfortunately, tech employers believe the "best" way to see how good you are is through programming challenges
+            very similar to the ones you get in the CWS. Personally, I'm in favor of a "here's my GitHub and project history" system but sadly no one asked me. And it's the policy of the school
+            that it would be better for you to fail here than when $80,000/year is on the line. So, if you want to get a job in comp sci or even just have that comp sci minor on
+            your resume, you'll have to push through it.
+            <br />
+            That being said, many people will complain about how they failed their exam, programming or theory, over your CS 225 experience. And when you ask them, "Oh, that sucks. How
+            long did you study?", you'll often get a blank look.
+            Some people seem to feel that you can't study for a programming exam or that it requires hours and hours of challenging programs to grasp the basics. That's just not true.
+            Treat it like any other exam. Make notes (hint: this website could be helpful :D), do some relevant POTDs and review with your classmates. I know this sounds simple but
+            you wouldn't believe how many people just do <i>not</i> do this.
+            <br />
+            However, and I cannot emphasize this enough, a large portion (I'd say 50%+) of people who do poorly did their best and studied and are understandably upset. You being a smart
+            AND a kind person, will recognize that you don't know why they didn't do well. Maybe they focused their time on another class. Maybe the concepts hadn't clicked for them
+            like they had for you. Maybe they're going through some life stuff. So offer to help them study! Doing so reinforces the material in your head and you might actually make
+            a difference to someone.
+          </p><br />
+          <h3>Learn How to Learn</h3>
+          <p class = 'tip_body'>
+            I once went to Wade's office hours and said, "Wade, I'm super interested in this class and I want to be a great software developer (I'm summarizing). What do you recommend?" And he pointed me in the vague
+            direction of Reddit and YouTube, etc. But I'm annoying, so I pressed him and said, "But what specifically do you think is best?" Then I got the best advice I've
+            gotten in college, which was "The best thing you can do is learn how to discover useful information on the web and apply it. That will be one of the best skills
+            you can get out of this class." <br />
+            By that, he meant I (and you) should Google whatever question you have, figure out what you <i>don't know</i> and then learn it. I'm sharing my knowledge and
+            the resources I used for this class on this site but if it doesn't work for you, go discover something different! I've put down the places I'd start at throughout the site.
+            Here's my motto (for this class and life) if you ever get stuck:
+          </p>
+          <h3 style="text-align: center;"><i>"When in doubt, Google your way out. Someone probably already solved it."</i></h3>
+        </ol>
+        <h6>Author: Thomas Driscoll</h6>
+    </div>
+  </body>
 </html>
