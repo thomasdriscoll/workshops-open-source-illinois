@@ -1,0 +1,24 @@
+ /* Student example CSS */
+ *{
+    box-sizing: border-box;
+  }
+  
+body{
+    display: flex;
+    margin: 0;
+    width: 80%;
+    font-family: 'Vollkorn', Georgia, Times, serif;
+    font-size: 16px;
+}
+  
+h5 {
+    color: blue;
+    font-size: 36px;
+}
+.student_container {
+    /* Make one class here*/
+    /* Make container responsive */
+}
+#student-id{
+  /* Google a style you like and implement it */
+}
