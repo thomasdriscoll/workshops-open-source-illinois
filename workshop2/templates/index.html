@@ -1,59 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% block head %}
     <!-- Metadata - additional information -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Stocks, Data, Analysis" />
     <meta name="description" content="A web application that provides info on market data and extract meaningful predictons based off that data." />
     <!-- Tab Icon info  -->
-    <title>Flask Workshop</title>
-    <link rel="shortcut icon" href="/static/squirrelbrown.png" />
+    <title>{% block title %}{% endblock %}</title>
     <!-- Font links -->
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css" />
     <!-- Javascript styling -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/static/effects.js"></script>
-    <script src='/static/home_func.js'></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src='/static/helper.js'></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!--- CSS styling (for later)-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    {% endblock %}
   </head>
   <body>
-
-    <!-- Navbar -->
-    <!-- Main Body -->
     <div class="container">
-      <h1 id="user_logged_in" class="text-center">Welcome to O-SAI Workshop 2!</h1>
-      <br />
-
-      <div class="d-flex justify-content-center">
-        <input id="firstname" type="text" placeholder="Type first name" />
-        <input id="lastname" type="text" placeholder="Type last name" />
-        <input id="major" type="text" placeholder="Type major" />
-        <input id="favlang" type="text" placeholder="Type favorite language" />
-        <button id="searchbutton" type="button" onclick="search()">GET</button>
-        <button id="addbutton" type="button" onclick="add()">POST</button>
-        <button id="updatebutton" type="button" onclick="update()">PUT</button>
-        <button id="delbutton" type="button" onclick="del()">DELETE</button>
-
-
-      </div>
-
-      <h6>Output of Query</h6>
-
+      {% block content %}
+      {% endblock %}
+      <h6>Output of Query</h6>  
       <div>
         <textarea id="output" style="width:100%; height:500px;"></textarea>
       </div>
-
-      <br />      
+      {% block linkback %}{% endblock %}
     </div>
-    <!-- <div id='user_hold' >{{user|safe}}</div> -->
-    <div id='current_stock' style='display: none'></div>
   </body>
-  <script src="/static/graph.js"></script>
-
 </html>

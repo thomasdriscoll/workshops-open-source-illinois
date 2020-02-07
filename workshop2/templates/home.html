@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% block title %} Flask Workshop {% endblock %}
+{% block content %}
+<!-- Navbar -->
+    <!-- Main Body -->
+  <div class="container">
+    <h1 id="user_logged_in" class="text-center">Welcome to O-SAI's Flask Workshop!</h1>
+    <br />
+    <div class="d-flex justify-content-center">
+      <input id="firstname" type="text" placeholder="Type first name" />
+      <input id="lastname" type="text" placeholder="Type last name" />
+      <input id="major" type="text" placeholder="Type major" />
+      <input id="favlang" type="text" placeholder="Type favorite language" />
+      <!-- look at the ids hehehe-->
+      <button id="getAllButt" type="button" onclick="get_all()">GET all</button>
+      <button id="getOneButt" type="button" onclick="get_one()">GET one</button>
+      <button id="getMajorButt" type="button" onclick="get_major()">GET major</button>
+      <button id="getLangButt" type="button" onclick="get_lang()">GET lang</button>
+      <button id="postButt" type="button" onclick="add()">POST</button>
+      <button id="putMajorButt" type="button" onclick="update_major()">PUT major</button>
+      <button id="putLangButt" type="button" onclick="update_lang()">PUT lang</button>
+      <button id="delButt" type="button" onclick="del()">DELETE</button>  
+    </div>  
+    <br />      
+  </div>
+{% endblock %}
+{% block linkback %}<a href="/myform">Check out your form here!</a>{% endblock %}
